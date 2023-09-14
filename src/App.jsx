@@ -7,7 +7,9 @@ function App() {
 
   return (
     <>
-     <h1 className='text-5xl'>hello girls</h1>
+   <div className='my-8'>
+   <h1 className='text-3xl font-bold text-center'>Course Registration</h1>
+   </div>
    <Home></Home>
     </>
   )
