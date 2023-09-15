@@ -2,11 +2,14 @@
 import { useState } from "react";
 import Cart from "../Cart/Cart";
 import { useEffect } from "react";
+import Swal from 'sweetalert2'
 
 
 const Home = () => {
 
     const [jsonData, setJsonData] = useState([]);
+    const [selectCourse, setSelectCourse] = useState([]);
+    
 
     useEffect(() => {
         fetch('fakeData.json')
@@ -14,7 +17,42 @@ const Home = () => {
             .then(data => setJsonData(data))
     }, [])
 
-    console.log(jsonData)
+    const handleSelectCourse = course => {
+        const isExist = selectCourse.find((item) => item['ID']=== course['ID']);
+        // console.log(isExist)
+        if(isExist){
+             // eslint-disable-next-line no-unreachable
+             let timerInterval
+            Swal.fire({
+              title: 'You already have this course',
+              html: 'I will close in <b></b> milliseconds.',
+              timer: 2000,
+              timerProgressBar: true,
+              didOpen: () => {
+                Swal.showLoading()
+                const b = Swal.getHtmlContainer().querySelector('b')
+                timerInterval = setInterval(() => {
+                  b.textContent = Swal.getTimerLeft()
+                }, 100)
+              },
+              willClose: () => {
+                clearInterval(timerInterval)
+              }
+            }).then((result) => {
+              /* Read more about handling dismissals below */
+              if (result.dismiss === Swal.DismissReason.timer) {
+                console.log('I was closed by the timer')
+              }
+            })
+
+        }else{
+
+            setSelectCourse([...selectCourse, course]);
+        }
+
+    }
+// console.log(selectCourse)
+    // console.log(jsonData)
 
     return (
         <div className="container mx-auto my-8">
@@ -23,8 +61,6 @@ const Home = () => {
 
 
                 <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8 lg:w-3/4 px-8 lg:px-0">
-
-
 
                     {
                         // eslint-disable-next-line no-unused-vars
@@ -40,26 +76,19 @@ const Home = () => {
                                     <p>Credit: {card['Credit']}hr</p>
                                 </div>
                                 <div className="flex justify-center">
-                                    <button className="bg-[#2F80ED] text-white font-medium text-lg py-2 px-32 rounded-xl">Select</button>
+                                    <button 
+                                    onClick={()=>handleSelectCourse(card)}
+                                     className="bg-[#2F80ED] text-white font-medium text-lg py-2 px-32 rounded-xl">Select</button>
                                 </div>
                             </div>
                         ))
                     }
 
-
-
-
-
-
-
                 </div>
-
 
                 <div className=" md:w-2/4 lg:w-1/4 px-8 lg:px-0">
-                    <Cart></Cart>
+                    <Cart selectCourse={selectCourse}></Cart>
                 </div>
-
-
 
             </div>
 
