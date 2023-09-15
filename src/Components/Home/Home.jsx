@@ -3,6 +3,9 @@ import { useState } from "react";
 import Cart from "../Cart/Cart";
 import { useEffect } from "react";
 import Swal from 'sweetalert2'
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
+// eslint-disable-next-line no-unused-vars
+import { faEnvelope, faBookOpen } from '@fortawesome/free-solid-svg-icons'
 const Home = () => {
     const [jsonData, setJsonData] = useState([]);
     const [selectCourse, setSelectCourse] = useState([]);
@@ -87,8 +90,8 @@ const Home = () => {
                                 <h3 className="text-center font-semibold">{card['Course_Name']}</h3>
                                 <p className="text-center"><small>{card['Details']}</small></p>
                                 <div className="flex justify-evenly">
-                                    <p>price: ${card['Price']}</p>
-                                    <p>Credit: {card['Credit']}hr</p>
+                                    <p> price: ${card['Price']}</p>
+                                    <p><FontAwesomeIcon icon={faBookOpen} /> Credit: {card['Credit']}hr</p>
                                 </div>
                                 <div className="flex justify-center">
                                     <button
