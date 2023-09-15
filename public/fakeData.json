@@ -1,74 +1,74 @@
 [
     {
       "ID": 1,
-      "Course Name": "Introduction to Artificial Intelligence",
-      "Cover Image": "https://i.ibb.co/VDJkf9Z/Rectangle-2.png",
+      "Course_Name": "Introduction to OOP Python",
+      "Cover_Image": "https://i.ibb.co/VDJkf9Z/Rectangle-2.png",
       "Credit": 3,
-      "Price": "$99.99",
+      "Price": "99",
       "Details": "Dive into the world of AI with this comprehensive course covering machine learning, neural networks, and more."
     },
     {
       "ID": 2,
-      "Course Name": "Web Development Fundamentals",
-      "Cover Image": "https://i.ibb.co/xFXBSx6/Rectangle-2-1.png",
+      "Course_Name": "Database (MySQL)",
+      "Cover_Image": "https://i.ibb.co/xFXBSx6/Rectangle-2-1.png",
       "Credit": 2,
-      "Price": "$79.99",
+      "Price": "79",
       "Details": "Learn the basics of web development, including HTML, CSS, and JavaScript, to kickstart your career in web design."
     },
     {
       "ID": 3,
-      "Course Name": "Digital Marketing Mastery",
-      "Cover Image": "https://i.ibb.co/n17RL60/Rectangle-2-2.png",
+      "Course_Name": "Introduction to C Programming",
+      "Cover_Image": "https://i.ibb.co/n17RL60/Rectangle-2-2.png",
       "Credit": 4,
-      "Price": "$149.99",
-      "Details": "Become a digital marketing expert with strategies in SEO, social media, and email marketing."
+      "Price": "149",
+      "Details": "Become a digital marketing expert with strategies in SEO, social media, and email marketing.Digital marketing best way for earning"
     },
     {
       "ID": 4,
-      "Course Name": "Financial Planning and Investment",
-      "Cover Image": "https://i.ibb.co/xzKfjHk/Rectangle-2-3.png",
+      "Course_Name": "Introduction to Algorithms",
+      "Cover_Image": "https://i.ibb.co/xzKfjHk/Rectangle-2-3.png",
       "Credit": 3,
-      "Price": "$129.99",
+      "Price": "129",
       "Details": "Gain financial literacy and investment skills to secure your financial future."
     },
     {
       "ID": 5,
-      "Course Name": "Graphic Design for Beginners",
-      "Cover Image": "https://i.ibb.co/vmg7t7X/Rectangle-2-4.png",
+      "Course_Name": "Introduction to C++ for DSA",
+      "Cover_Image": "https://i.ibb.co/vmg7t7X/Rectangle-2-4.png",
       "Credit": 2,
-      "Price": "$69.99",
+      "Price": "69",
       "Details": "Explore the fundamentals of graphic design, including Adobe Creative Suite tools."
     },
     {
       "ID": 6,
-      "Course Name": "Data Science Essentials",
-      "Cover Image": "https://i.ibb.co/ZSrVsKc/Rectangle-2-5.png",
+      "Course_Name": "Software Engineering",
+      "Cover_Image": "https://i.ibb.co/ZSrVsKc/Rectangle-2-5.png",
       "Credit": 4,
-      "Price": "$159.99",
+      "Price": "159",
       "Details": "Learn data analysis, visualization, and machine learning techniques to harness the power of data."
     },
     {
       "ID": 7,
-      "Course Name": "Culinary Arts Masterclass",
-      "Cover Image": "https://i.ibb.co/b6d62qP/Rectangle-2-6.png",
+      "Course_Name": "Problem-Solving Part",
+      "Cover_Image": "https://i.ibb.co/b6d62qP/Rectangle-2-6.png",
       "Credit": 2,
-      "Price": "$89.99",
+      "Price": "89",
       "Details": "Discover the art of cooking with expert chefs and elevate your culinary skills."
     },
     {
       "ID": 8,
-      "Course Name": "Music Production Workshop",
-      "Cover Image": "https://i.ibb.co/2jJfvHQ/Rectangle-3.png",
+      "Course_Name": "Basic Data Structures",
+      "Cover_Image": "https://i.ibb.co/2jJfvHQ/Rectangle-3.png",
       "Credit": 3,
-      "Price": "$119.99",
+      "Price": "119",
       "Details": "Create your own music with this hands-on course in music production and recording."
     },
     {
       "ID": 9,
-      "Course Name": "Yoga and Mindfulness Meditation",
-      "Cover Image": "https://i.ibb.co/PTW86dr/Rectangle-3-1.png",
+      "Course_Name": "AWS, Cloud Computing",
+      "Cover_Image": "https://i.ibb.co/PTW86dr/Rectangle-3-1.png",
       "Credit": 1,
-      "Price": "$49.99",
+      "Price": "49",
       "Details": "Achieve inner peace and physical wellness with a blend of yoga and mindfulness practices."
     }
   ]

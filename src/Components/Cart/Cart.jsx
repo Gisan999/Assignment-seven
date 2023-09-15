@@ -9,6 +9,10 @@ const Cart = () => {
             </div>
             <div>
                 <h1 className="text-xl font-bold py-3">Course Name</h1>
+            <div className="pb-3">
+            <li>sdfg</li>
+              <li>sdfg</li>
+            </div>
               
             </div>
             <div>
