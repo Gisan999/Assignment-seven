@@ -1,6 +1,5 @@
 /* eslint-disable react/prop-types */
 
-
 // eslint-disable-next-line react/prop-types
 const Cart = ({ selectCourse, totalCredit, remaining, totalCost }) => {
     return (
@@ -21,7 +20,6 @@ const Cart = ({ selectCourse, totalCredit, remaining, totalCost }) => {
             <div>
                 <h1 className="font-medium border-t-2 border-gray-300 text-lg py-2 border-b-2">Total Credit Hour : {totalCredit}</h1>
             </div>
-
             <div className="pt-3">
                 <h1 className="font-semibold text-xl">Total Price: {totalCost} USD</h1>
             </div>

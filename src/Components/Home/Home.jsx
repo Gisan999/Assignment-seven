@@ -39,7 +39,6 @@ const Home = () => {
                     clearInterval(timerInterval)
                 }
             })
-            
             // .then((result) => {
             //     /* Read more about handling dismissals below */
             //     // if (result.dismiss === Swal.DismissReason.timer) {
@@ -52,6 +51,8 @@ const Home = () => {
                 total = total + count['Price']
             })
             selectCourse.forEach((item) => {
+
+
                 sum = sum + item['Credit']
             })
             const TotalRemaining = 20 - sum;
